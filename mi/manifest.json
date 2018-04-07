@@ -1,0 +1,15 @@
+{
+	"name":"第一个小米抢购插件",
+	"manifest_version":2,
+	"version":"1.0",
+	"description":"keien的自动抢购插件",
+	"browser_action":{
+		"default_icon":"logo.png"
+	},
+	"content_scripts":[
+			{
+		"matches":["https://item.mi.com/product/*"],
+		"js":["mi.js"]
+		}
+	]
+}
